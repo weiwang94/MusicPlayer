@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>撒哈拉的音乐播放器</title>
+		<link rel="stylesheet" href="music.css">
+	</head>
+	<!-- 下面这个 style 里面不要写东西 -->
+	<style media="screen"></style>
+	<body>
+		<audio id="ww-id-music-player">
+			<source src="music/Yawn - 三生三世.mp3" data-list="0">
+		</audio>
+		<header>
+			<img src="img/icon.png" alt="图标">
+			<span id="ww-music-word">撒哈拉</span>
+		</header>
+		<main class="bgbackground">
+			<article class="ww-music-play">
+				<section class="ww-music-left-aside">
+					<img class="ww-gan" src="img/gan.png" alt="">
+					<div class="ww-music-rotator">
+						<span class="ww-cd-outside midXY">
+							<span class="ww-rotate-cd midXY bag">
+								<span class="bag midXY" id=id-cd-cover>
+								</span>
+							</span>
+						</span>
+					</div>
+					<div id=id-music-name>
+						<span id=id-current-music>三生三世 -- yawn</span>
+						<div class=music-funtion>
+							<span>喜欢</span>
+							<span>收藏</span>
+							<span>下载</span>
+							<span>分享</span>
+						</div>
+					</div>
+				</section>
+				<section class="ww-music-right-aside">
+					<section class="ww-music-contaniner">
+						<div class="ww-music-dir">
+							<span class="ww-dir-title">歌曲列表</span>
+							<span class="ww-dir-nums">1 首歌</span>
+							<span class="ww-dir-flag">播放：
+								<span class="ww-dir-times">0</span>
+							次</span>
+						</div>
+						<div class="ww-dir-info">
+							<div class="ww-dir-info-blank">
+							</div>
+							<div class="ww-dir-info-name">
+								歌曲标题
+							</div>
+							<div class="ww-dir-info-time">
+								时长
+							</div>
+							<div class="ww-dir-info-singer">
+								歌手
+							</div>
+						</div>
+					</section>
+				</section>
+			</article>
+		</main>
+		<footer>
+			<section class='ww-center'>
+				<section id=ww-id-music-control>
+	                <img id=id-img-pre src="img/prev.png" alt="prev">
+	                <img id=id-img-play src="img/play.png" data-state="pause" alt="play">
+	                <img id=id-img-next src="img/next.png" alt="next">
+	            </section>
+	            <section id=ww-id-music-vol-model>
+	                <img id='ww-id-voice' src="img/vol.png" data-state='voice'>
+					<section class="ww-music-progress" data-volume='1'>
+						<input class="ww-progress" id="ww-id-vol-progress" type="range" min=0 max=100 value=80.5 step="">
+					</section>
+					<img id=id-music-order data-order=0 src="img/listPlay.png">
+					<section class='ww-model-tip hide'>
+
+					</section>
+	            </section>
+	            <section id=ww-id-music-progress-bar>
+					<section id=id-current-time>
+						00:00
+					</section>
+					<section id=id-duration>
+						00:00
+					</section>
+					<section id=id-progress>
+						<input  class="ww-progress" id="ww-id-music-progress" type="range" min=0 max=100 value=0 step="0.25">
+					</section>
+	            </section>
+			</section>
+		</footer>
+		<script src="js/ku.js"></script>
+		<script src="js/music.js"></script>
+	</body>
+</html>
