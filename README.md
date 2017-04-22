@@ -23,14 +23,16 @@
     		transform: translateX(-50%) translateY(-50%);
 		}
 > 设置经过一定时间旋转一定角度
->		cd.interval = setInterval(function() {
+
+		cd.interval = setInterval(function() {
 			cd.dregree = (cd.dregree + 0.25) % 360
 			var style = `translateX(-50%) translateY(-50%) rotateZ(${cd.dregree}deg)`
 			cd.style.transform = style
-			}, 20)
+		}, 20)
 
 - 列表 明暗交替排列
 > 通过加入 even 和 odd样式
+
 		.odd {
 	    	background: #ececef;
 		}
